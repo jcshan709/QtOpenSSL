@@ -1,3 +1,5 @@
+Select your language: English | [简体中文](https://github.com/sjc0910/QtOpenSSL/blob/main/README_zh.md)  
+
 # QtOpenSSL
 QtOpenSSL is a wrapping of [OpenSSL](https://github.com/OpenSSL/OpenSSL) for [Qt](https://qt.io).  
 
