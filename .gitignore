@@ -1,0 +1,12 @@
+# build files
+out/
+build/
+
+# vscode
+.vscode/
+
+# visual studio
+.vs/
+
+# testing
+test/
