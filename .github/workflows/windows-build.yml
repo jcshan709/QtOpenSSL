@@ -12,20 +12,15 @@ env:
   BUILD_CONFIGURATION: Release
 
 jobs:
-  get-cmake:
-    runs-on: windows-latest
-    steps:
-    - uses: Symbitic/install-cmake@v0.1.0
-      with:
-        cmake: 3.21.3
-        ninja: 1.10.2
   build:
-    needs: [get-cmake]
     runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v2
-
+    
+    - name: cmake build
+      run: cmake ${{env.GITHUB_WORKSPACE}} -G "Visual Studio 17 2022"
+    
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1.0.2
 
